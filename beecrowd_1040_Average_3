@@ -1,0 +1,32 @@
+//beecrowd_1040_Average_3
+
+#include<stdio.h>
+int main() {
+    
+    double a,b,c,d,e,g,sum;
+    scanf("%lf %lf %lf %lf",&a,&b,&c,&d);
+    e = (a*2+b*3+c*4+d*1)/10;
+    printf("Media: %.1lf\n",e);
+    if(e>=7.0){
+        printf("Aluno aprovado.\n");
+    }
+    else if(e<5.0){
+        printf("Aluno reprovado.\n");
+    }
+    else{
+        printf("Aluno em exame.\n");
+        scanf("%lf",&g);
+        printf("Nota do exame: %.1lf\n",g);
+        sum = (e+g)/2;
+        if (sum>=5.0){
+            printf("Aluno aprovado.\n");
+        }
+        else {
+            printf("Aluno reprovado.\n");
+        }
+        printf("Media final: %.1lf\n",sum);
+    }
+   
+
+    return 0;
+}
